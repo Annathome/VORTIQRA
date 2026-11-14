@@ -129,9 +129,9 @@ async function handleApi(req, res, url) {
     const input = JSON.parse(raw);
     const id = typeof input.id === "string" ? input.id : "";
     const xp = Number(input.xp);
-    const callsign = typeof input.callsign === "string" ? input.callsign.trim().slice(0, 32) : "";
+    const callsign = typeof input.callsign === "string" ? input.callsign.trim() : "";
     const name = typeof input.name === "string" ? input.name.trim().slice(0, 48) : "";
-    if (!/^[\w-]{10,80}$/.test(id) || !callsign || !Number.isSafeInteger(xp) || xp < 0 || xp > 10000000) {
+    if (!/^[\w-]{10,80}$/.test(id) || !/^[A-Za-z0-9_-]{1,10}$/.test(callsign) || !Number.isSafeInteger(xp) || xp < 0 || xp > 10000000) {
       return json(res, 400, { error: "Invalid profile" });
     }
     const progress = cleanProgress(input.progress);

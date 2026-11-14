@@ -74,10 +74,84 @@ header .me{display:flex;align-items:center}.header-hub{display:flex;align-items:
 .header-hub{flex-direction:row;flex-wrap:nowrap}.header-user{order:1}.header-avatar{order:2;flex:0 0 36px}
 .profile-home-back{margin-left:40vw}
 .profile-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:16px}.profile-home-back{margin:0!important}
-.astro-chat{position:fixed;right:20px;bottom:16px;width:180px;height:190px;z-index:30;pointer-events:none}.astro-chat-figure{position:absolute;right:46px;bottom:0;width:112px;height:174px;filter:drop-shadow(0 8px 12px #0008);pointer-events:auto;cursor:pointer}.astro-chat-figure.no-webgl{visibility:hidden}.astro-chat-hint{position:absolute;right:42px;bottom:144px;max-width:190px;padding:9px 12px;border:1px solid #ff4fd866;border-radius:14px 14px 3px 14px;background:#211529ed;color:var(--tx);font-size:12px;line-height:1.35;box-shadow:0 4px 20px #ff4fd822;pointer-events:auto}.astro-chat-launch{position:absolute;right:0;bottom:18px;width:48px;height:48px;border:1px solid var(--cy);border-radius:50%;background:var(--panel);color:var(--cy);font-size:22px;box-shadow:0 0 22px var(--cy-40);cursor:pointer;pointer-events:auto}.astro-chat-launch:hover{filter:brightness(1.12);transform:translateY(-2px)}.astro-chat-panel{position:absolute;right:0;bottom:calc(100% + 6px);display:flex;flex-direction:column;width:min(340px,calc(100vw - 28px));height:min(430px,65vh);overflow:hidden;border:1px solid var(--cy);border-radius:16px;background:#0c1425f5;box-shadow:0 16px 52px #000b,0 0 22px var(--cy-40);backdrop-filter:blur(14px);pointer-events:auto}.astro-chat-panel[hidden]{display:none}.astro-chat-head{display:flex;align-items:center;justify-content:space-between;padding:13px 15px;border-bottom:1px solid var(--line);background:linear-gradient(110deg,var(--cy-40),transparent 70%)}.astro-chat-head b,.astro-chat-head small{display:block}.astro-chat-head b{font:700 17px "Chakra Petch",sans-serif;color:var(--cy)}.astro-chat-head small{color:var(--mut);font-size:11px}.astro-chat-close{width:32px;height:32px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--tx);font-size:20px;cursor:pointer}.astro-chat-messages{display:flex;flex:1;flex-direction:column;gap:10px;overflow:auto;padding:14px}.chat-msg{max-width:90%;padding:9px 11px;border:1px solid var(--line);border-radius:12px;font-size:13px;line-height:1.45;white-space:pre-wrap}.chat-msg.bot{align-self:flex-start;background:#111c30;color:var(--tx)}.chat-msg.user{align-self:flex-end;border-color:var(--cy);background:var(--cy-40);color:var(--tx)}.chat-suggestions{display:flex;flex-wrap:wrap;gap:6px}.chat-suggestions button{padding:6px 9px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--cy);font:12px "DM Sans",sans-serif;cursor:pointer}.chat-suggestions button:hover{background:var(--cy-40)}.astro-chat-form{display:flex;gap:8px;padding:10px;border-top:1px solid var(--line)}.astro-chat-form input{min-width:0;flex:1;border:1px solid var(--line);border-radius:10px;background:#080e1a;color:var(--tx);padding:9px 11px;font:13px "DM Sans",sans-serif}.astro-chat-form input:focus{outline:1px solid var(--cy);border-color:var(--cy)}.astro-chat-form>button{width:40px;border:0;border-radius:10px;background:var(--cy);color:#06101c;font-size:18px;cursor:pointer}body.has-game-bottom-nav .astro-chat{bottom:104px}@media(max-width:600px){.astro-chat{right:12px;bottom:10px;transform:scale(.9);transform-origin:bottom right}.astro-chat-panel{height:min(420px,60vh)}body.has-game-bottom-nav .astro-chat{bottom:96px}}
+.astro-chat{position:fixed;right:20px;bottom:16px;width:180px;height:190px;z-index:30;pointer-events:none}.astro-chat-figure{position:absolute;right:46px;bottom:0;width:112px;height:174px;filter:drop-shadow(0 8px 12px #0008);pointer-events:auto;cursor:pointer}.astro-chat-figure.no-webgl{visibility:hidden}.astro-chat-hint{position:absolute;right:42px;bottom:144px;max-width:190px;padding:9px 12px;border:1px solid var(--cy);border-radius:14px 14px 3px 14px;background:#211529ed;color:var(--tx);font-size:12px;line-height:1.35;box-shadow:0 4px 20px var(--cy-40);pointer-events:auto}.astro-chat-launch{position:absolute;right:0;bottom:18px;width:48px;height:48px;border:1px solid var(--cy);border-radius:50%;background:var(--panel);color:var(--cy);font-size:22px;box-shadow:0 0 22px var(--cy-40);cursor:pointer;pointer-events:auto}.astro-chat-launch:hover{filter:brightness(1.12);transform:translateY(-2px)}.astro-chat-panel{position:absolute;right:0;bottom:calc(100% + 6px);display:flex;flex-direction:column;width:min(340px,calc(100vw - 28px));height:min(430px,65vh);overflow:hidden;border:1px solid var(--cy);border-radius:16px;background:#0c1425f5;box-shadow:0 16px 52px #000b,0 0 22px var(--cy-40);backdrop-filter:blur(14px);pointer-events:auto}.astro-chat-panel[hidden]{display:none}.astro-chat-head{display:flex;align-items:center;justify-content:space-between;padding:13px 15px;border-bottom:1px solid var(--line);background:linear-gradient(110deg,var(--cy-40),transparent 70%)}.astro-chat-head b,.astro-chat-head small{display:block}.astro-chat-head b{font:700 17px "Chakra Petch",sans-serif;color:var(--cy)}.astro-chat-head small{color:var(--mut);font-size:11px}.astro-chat-close{width:32px;height:32px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--tx);font-size:20px;cursor:pointer}.astro-chat-messages{display:flex;flex:1;flex-direction:column;gap:10px;overflow:auto;padding:14px}.chat-msg{max-width:90%;padding:9px 11px;border:1px solid var(--line);border-radius:12px;font-size:13px;line-height:1.45;white-space:pre-wrap}.chat-msg.bot{align-self:flex-start;background:#111c30;color:var(--tx)}.chat-msg.user{align-self:flex-end;border-color:var(--cy);background:var(--cy-40);color:var(--tx)}.chat-suggestions{display:flex;flex-wrap:wrap;gap:6px}.chat-suggestions button{padding:6px 9px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--cy);font:12px "DM Sans",sans-serif;cursor:pointer}.chat-suggestions button:hover{background:var(--cy-40)}.astro-chat-form{display:flex;gap:8px;padding:10px;border-top:1px solid var(--line)}.astro-chat-form input{min-width:0;flex:1;border:1px solid var(--line);border-radius:10px;background:#080e1a;color:var(--tx);padding:9px 11px;font:13px "DM Sans",sans-serif}.astro-chat-form input:focus{outline:1px solid var(--cy);border-color:var(--cy)}.astro-chat-form>button{width:40px;border:0;border-radius:10px;background:var(--cy);color:#06101c;font-size:18px;cursor:pointer}body.has-game-bottom-nav .astro-chat{bottom:104px}@media(max-width:600px){.astro-chat{right:12px;bottom:10px;transform:scale(.9);transform-origin:bottom right}.astro-chat-panel{height:min(420px,60vh)}body.has-game-bottom-nav .astro-chat{bottom:96px}}
 body.chat-hidden #astro-chat{display:none}
 .astro-chat-figure{border:2px solid #eaf9ff;border-radius:18px;background:#69b7ef;box-shadow:0 8px 26px #0006}
 .astro-chat-figure{background:transparent;border:0;box-shadow:none;filter:drop-shadow(0 8px 10px #0005)}
 .astro-chat{transform:none!important}.astro-chat-figure{position:fixed!important;left:auto;top:auto;right:auto!important;bottom:auto!important;z-index:0;pointer-events:none}.astro-chat-launch{z-index:3}.astro-chat-panel{z-index:2}
 .astro-chat-figure{pointer-events:auto;cursor:grab;touch-action:none}.astro-chat-figure.dragging{cursor:grabbing}
 .leaderboard-row{display:grid;grid-template-columns:42px minmax(0,1fr) auto;align-items:center;gap:10px;padding:10px 4px;border-bottom:1px solid var(--line)}.leaderboard-row:last-child{border-bottom:0}.leaderboard-place{color:var(--cy);font:700 14px "Chakra Petch",sans-serif}.leaderboard-person{display:flex;flex-direction:column;min-width:0}.leaderboard-person b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.leaderboard-person em{color:var(--cy);font-size:11px;font-style:normal}.leaderboard-person small{color:var(--mut);font-size:12px}.leaderboard-row>strong{white-space:nowrap;color:var(--tx)}#leaderboard-toggle{margin-top:12px}
+
+/* Keep content within narrow screens and touch targets comfortable. */
+html{overflow-x:hidden}body{overflow-x:hidden}main,#view,#view>*{min-width:0;max-width:100%}.card,.cert{min-width:0;overflow-wrap:anywhere}img,video,iframe{max-width:100%}.row{flex-wrap:wrap}.profile-insignia .patch-insignia{margin-left:min(50vw,calc(100% - 72px))}.lbl{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px}.lbl span{min-width:0;text-align:center;overflow-wrap:anywhere}
+@media(max-width:760px){
+  main{padding:18px 14px 24px}
+  header{gap:8px 12px}
+  #nav:not(.game-nav){min-width:0;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;justify-content:flex-start}
+  #nav:not(.game-nav)::-webkit-scrollbar,#nav.game-nav::-webkit-scrollbar{display:none}
+  #nav.game-nav{left:8px;right:8px;width:auto;max-width:none;transform:none;overflow-x:auto;overscroll-behavior-x:contain;justify-content:flex-start;scrollbar-width:none}
+  #nav.game-nav button{flex:0 0 auto;min-width:78px;padding-inline:10px}
+  .feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .profile-insignia .patch-insignia{margin-left:min(34vw,calc(100% - 72px))}
+}
+@media(max-width:520px){
+  body{font-size:15px}
+  main{padding:14px 10px 20px}
+  .card,.cert{padding:13px;border-radius:12px}
+  .grid,.feature-grid{grid-template-columns:minmax(0,1fr);gap:10px}
+  header{padding:9px 10px}
+  header .logo{gap:8px}
+  .logo-mark{width:38px;height:38px}
+  .logo-copy strong{font-size:15px;letter-spacing:.08em}
+  .logo-copy small{font-size:8px}
+  .header-user b{font-size:12px}
+  .header-user small{font-size:9px}
+  .header-avatar{width:32px;height:32px;flex-basis:32px}
+  .header-avatar .avatar-img{width:26px;height:26px}
+  #nav:not(.game-nav){gap:2px}
+  #nav:not(.game-nav) button{padding:8px 10px;font-size:12px}
+  #nav.game-nav{bottom:calc(8px + env(safe-area-inset-bottom,0px))!important;padding:6px;border-radius:13px}
+  #nav.game-nav button{min-width:72px;min-height:42px;padding:7px 8px;font-size:11px;gap:4px}
+  #nav.game-nav button .ic{width:15px;flex-basis:15px;font-size:14px}
+  body.has-game-bottom-nav{padding-bottom:calc(74px + env(safe-area-inset-bottom,0px))}
+  .profile-insignia .patch-insignia{margin-left:min(28vw,calc(100% - 72px))}
+  .profile-actions{align-items:stretch}
+  .profile-actions .btn{flex:1 1 100%;}
+  .traj{margin-top:18px}
+  .lbl{font-size:9px;line-height:1.2}
+  .astro-chat{right:8px;bottom:8px;width:154px;height:160px}
+  .astro-chat-figure{width:92px;height:142px}
+  .astro-chat-hint{right:36px;bottom:116px;max-width:min(178px,calc(100vw - 82px));font-size:11px}
+  .astro-chat-panel{width:min(340px,calc(100vw - 20px));height:min(430px,64dvh)}
+  body.has-game-bottom-nav .astro-chat{bottom:82px}
+}
+@media(max-width:360px){
+  .logo-copy small{display:none}
+  #nav.game-nav button{min-width:66px;font-size:10px;padding-inline:6px}
+  .chip{padding:7px 10px;font-size:12px}
+  .profile-insignia .patch-insignia{margin-left:min(22vw,calc(100% - 72px))}
+  .lbl{font-size:8px}
+  .astro-chat{transform:scale(.82)!important;transform-origin:bottom right;right:5px}
+  body.has-game-bottom-nav .astro-chat{bottom:78px}
+}
+@media(max-height:500px) and (orientation:landscape){
+  .astro-chat{transform:scale(.78)!important;transform-origin:bottom right;right:8px;bottom:8px}
+  body.has-game-bottom-nav .astro-chat{bottom:70px}
+  .astro-chat-panel{height:70dvh}
+  #nav.game-nav{bottom:calc(5px + env(safe-area-inset-bottom,0px))!important}
+}
+/* Keep Nova visible without WebGL and fit the whole game menu on phones. */
+.astro-chat-fallback{display:none;position:absolute;right:44px;bottom:0;width:112px;height:174px;align-items:end;justify-content:center;font-size:82px;line-height:1;filter:drop-shadow(0 8px 12px #0008);pointer-events:none}
+.astro-chat-figure.no-webgl+.astro-chat-fallback{display:flex}
+@media(max-width:520px){
+  #nav.game-nav{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:2px;overflow:visible;justify-content:initial;padding:5px}
+  #nav.game-nav button{display:flex;flex:initial;flex-direction:column;justify-content:center;gap:1px;min-width:0;width:100%;min-height:44px;padding:4px 1px;font-size:9px;line-height:1.1;white-space:nowrap}
+  #nav.game-nav button .ic{width:auto;flex:initial;font-size:13px;line-height:1.1}
+  .astro-chat-fallback{right:38px;width:92px;height:142px;font-size:68px}
+}
+@media(max-width:360px){
+  #nav.game-nav{grid-template-columns:repeat(7,minmax(0,1fr));gap:0;padding:4px}
+  #nav.game-nav button{min-width:0;padding:3px 0;font-size:8px}
+  #nav.game-nav button .ic{font-size:12px}
+  .astro-chat-fallback{right:34px;width:82px;height:128px;font-size:60px}
+}

@@ -155,3 +155,10 @@ html{overflow-x:hidden}body{overflow-x:hidden}main,#view,#view>*{min-width:0;max
   #nav.game-nav button .ic{font-size:12px}
   .astro-chat-fallback{right:34px;width:82px;height:128px;font-size:60px}
 }
+@media(min-width:761px){
+  main{width:80%;max-width:1360px;padding:22px clamp(20px,3vw,36px)}
+  .card{padding:14px}
+  .card[style*="padding:0"]{padding:0}
+  .hero-scene{height:460px!important}
+  #nav.game-nav{width:min(80vw,1280px);max-width:1280px}
+}

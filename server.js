@@ -6,7 +6,7 @@ const ROOT = __dirname;
 const STORE_DIR = path.join(ROOT, "data");
 const STORE_FILE = path.join(STORE_DIR, "leaderboard.json");
 const PORT = Number(process.env.PORT) || 4173;
-const MIME = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8" };
+const MIME = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".webmanifest": "application/manifest+json; charset=utf-8", ".svg": "image/svg+xml" };
 const RANKS = [["Cadet", 0], ["Pilot", 100], ["Specialist", 250], ["Commander", 500], ["Mission Director", 900]];
 let writes = Promise.resolve();
 
